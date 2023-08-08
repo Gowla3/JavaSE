@@ -33,5 +33,5 @@ jobs:
       - name: Run a multi-line script
         run: |
           cd src/com/bilibili/unsafe
-          run-ant.bat
+          run-ant.bat -f new_build.xml build
         shell: cmd
