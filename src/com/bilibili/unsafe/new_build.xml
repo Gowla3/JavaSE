@@ -1,0 +1,10 @@
+<project name="PalominoDCRUO" default="build.PalominoDCRUO_full" basedir="." >
+	<description>
+		This is the QuantStudio Designer(R) Software build file for Research Use Only (RUO).
+	</description>
+
+	<target name="build">
+		<echo message="Build Date: ${build.date}" /> 
+	</target>
+
+</project>
