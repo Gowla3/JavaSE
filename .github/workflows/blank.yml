@@ -41,3 +41,8 @@ jobs:
           cd src/com/bilibili/unsafe
           run-ant.bat -f new_build.xml build
         shell: cmd
+        
+      - name: Upload files to JFrog
+        run: |
+         jf --version
+         jf rt u "src/com/bilibili\*\Home\unsafe\*.*" quantstudio5dx-desktop/bin/ --ant --flat --quiet
