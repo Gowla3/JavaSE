@@ -24,6 +24,12 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
+      
+      - name: Setup JFrog CLI 2
+        uses: jfrog/setup-jfrog-cli@v2
+        env:
+          JF_URL: https://acme.jfrog.io
+          JF_ACCESS_TOKEN: ${{ secrets.JF_SVC_TOKEN }}
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
