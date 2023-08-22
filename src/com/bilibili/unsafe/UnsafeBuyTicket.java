@@ -6,6 +6,9 @@ public class UnsafeBuyTicket {
     public static void main(String[] args) {
         BuyTicket station = new BuyTicket();
 
+
+
+        
         new Thread(station,"苦逼的你").start();
         new Thread(station,"牛逼的你们").start();
         new Thread(station,"可恶的黄牛党").start();
